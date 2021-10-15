@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'Gordita Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Regular'), url('../fonts/Gordita Regular.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Regular Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Regular Italic'), url('../fonts/Gordita Regular Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Thin'), url('../fonts/Gordita Thin.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Thin Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Thin Italic'), url('../fonts/Gordita Thin Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Light'), url('../fonts/Gordita Light.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Light Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Light Italic'), url('../fonts/Gordita Light Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Medium'), url('../fonts/Gordita Medium.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Medium Italic'), url('../fonts/Gordita Medium Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Bold'), url('../fonts/Gordita Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Bold Italic'), url('../fonts/Gordita Bold Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Black'), url('../fonts/Gordita Black.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Black Italic'), url('../fonts/Gordita Black Italic.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Ultra';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Ultra'), url('../fonts/Gordita Ultra.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Gordita Ultra Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Gordita Ultra Italic'), url('../fonts/Gordita Ultra Italic.woff') format('woff');
+  }
+.wrapper {
+  width: 90%;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: 0.3s ease-in;
+}
+body {
+  font-family: 'Gordita Regular';
+  background: #141414;
+}
+
+header .wrapper{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo img {
+  width: 80%;
+}
+header .nav{
+  display: flex;
+  align-items: center;
+}
+header .nav li {
+  margin-right: 40px;
+}
+header .nav li:last-child{
+  margin-right: 0;
+}
+header .nav a {
+  font-size: 22px;
+  color: #5B5A5D;
+  font-weight: 600;
+}
+header .nav a:hover{
+  color: #fff;
+}
+header .nav .actived {
+  color: #fff;
+}
+header .nav .button {
+  border-image: linear-gradient(to right, #D45945, #A14D9B);
+  overflow: hidden;
+}
+header .nav .btn {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  padding: 16px 26px;
+  border-radius: 10px;
+  color: #D45945;
+}
+/* header -end */
+main {
+  height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+}
+main .wrapper {
+  display: flex;
+}
+main h1 {
+  color: #fff;
+  font-size: 56px;
+  width: 80%;
+  margin-bottom: 24px;
+}
+main h1 span{
+  color: #D45945;
+}
+main .text p {
+  color: #5B5A5D;
+  font-size: 22px;
+  font-weight: 600;
+  width: 60%;
+  margin-bottom: 24px;
+}
+main button {
+  padding: 18px 26px;
+  background:  linear-gradient(to right, #D45945, #A14D9B);
+  font-size: 22px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: .3s ease-in;
+}
+main button span {
+  display: block;
+  width: 100%;
+  color: #b8b8b8;
+}
+main button:hover {
+  transform: scale(1.03);
+  background:  linear-gradient(to right, #A14D9B, #D45945);
+}
+main .image-box{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  filter: blur(50px);
+}
+main .image-box img {
+  width: 45%;
+}
+main .image-box img.rised{
+  margin-top: -100%;
+}
+main .image-box .lefted{
+  position: relative;
+  left: -180px;
+  bottom: -80px;
+}
+main .lifted {
+  position: absolute;
+  right: 8%;
+  top:12%;
+}
