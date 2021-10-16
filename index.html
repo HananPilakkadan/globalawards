@@ -1,48 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Awards</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
     <script src="./js/jquery.min.js"></script>
     <script src="./js/wow.js"></script>
     <script src="./js/index.js"></script>
     <!-- fav-icon -->
-    <link rel="stylesheet" href="./images/favicon.png">
-</head>
-<body>
+    <link rel="icon" href="./images/favicon.png" />
+  </head>
+  <body>
     <header>
-        <div class="wrapper">
-            <div class="logo"><a href="index.html"><img src="./images/logo.png" alt="Logo"></a></div>
-            <ul class="nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#" class="actived">Awards</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#" class="button btn">Get Start</a></li>
-
-            </ul>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="index.html"><img src="./images/logo.png" alt="Logo" /></a>
         </div>
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#" class="button btn">Get Start</a></li>
+        </ul>
+         <!-- mobile-menu -->
+      <div class="icon" onclick="showMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="mobile-nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Awards</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#" class="button btn">Get Start</a></li>
+    </ul>
+      </div>
     </header>
     <!-- header-end -->
+    <span class="overlay" onclick="hideMenu()"></span>
     <main>
-        <div class="wrapper">
-            <div class="text">
-                <h1>2021 Global Design <span>Awards</span> Published</h1>
-                <p>Here we published 2021 global design awards for the design Competitons</p>
-                <button><span>Already impressed?</span>Get started today!</button>
-            </div>
-            <div class="image-box">
-                <img src="./images/pattern-color.png" alt="Blured" class="lefted">
-                <img src="./images/pattern-color.png" alt="Blured" class="rised">
-            </div>
-            <div class="lifted">
-                <img src="./images/spot-image.svg" alt="">
-            </div>
+      <div class="wrapper">
+        <div class="text">
+          <h1 class="wow fadeInLeft">2021 Global Design <span>Awards</span> Published</h1>
+          <p class="wow fadeInLeft" data-wow-delay=".2s">
+            Here we published 2021 global design awards for the design
+            Competitons
+          </p>
+          <button class="wow fadeInLeft" data-wow-delay=".3s"><span>Already impressed?</span>Get started today!</button>
         </div>
+        <div class="image-box wow fadeInRight">
+          <img src="./images/pattern-color.png" alt="Blured" class="lefted" />
+          <img src="./images/pattern-color.png" alt="Blured" class="rised" />
+        </div>
+        <div class="lifted">
+          <img src="./images/spot-image.svg" alt="" />
+        </div>
+      </div>
     </main>
-</body>
+    <!-- spotlight-end -->
+
+    <section id="awards">
+      <div class="wrapper">
+        <ul class="items">
+          <li class="wow fadeInUp">
+            <a href="#">
+              <div class="top">
+                <img src="./images/apple.svg" alt="Apple" />
+                <span>18 Jun 2020</span>
+              </div>
+              <div class="container">
+                <span>Gold Winner</span>
+                <h2>Apple Design Award 2020-21</h2>
+                <img src="./images/cross-line.svg" alt="Cross Line" />
+              </div>
+              <div class="bottom">
+                <h6>United States</h6>
+                <img src="./images/arrow.svg" alt="Arrow" />
+              </div>
+            </a>
+          </li>
+          <li class="wow fadeInUp" data-wow-delay=".2s">
+            <a href="#">
+              <div class="top">
+                <img src="./images/google.svg" alt="Google" />
+                <span>8 Mar 2021</span>
+              </div>
+              <div class="container">
+                <span>Runner Up</span>
+                <h2>Google Design Award 2020-21</h2>
+                <img src="./images/cross-line.svg" alt="Cross Line" />
+              </div>
+              <div class="bottom">
+                <h6>India, New Delhi</h6>
+                <img src="./images/arrow.svg" alt="Arrow" />
+              </div>
+            </a>
+          </li>
+          <li class="wow fadeInUp" data-wow-delay=".3s">
+            <a href="#">
+              <div class="top">
+                <img src="./images/freepik-logo.svg" alt="Freepik" />
+                <span>18 Jun 2019</span>
+              </div>
+              <div class="container">
+                <span>Silver Award</span>
+                <h2>Freepik Best UI Award 2019-20</h2>
+                <img src="./images/cross-line.svg" alt="Cross Line" />
+              </div>
+              <div class="bottom">
+                <h6>France</h6>
+                <img src="./images/arrow.svg" alt="Arrow" />
+              </div>
+            </a>
+          </li>
+          <li class="wow fadeInUp" data-wow-delay=".4s">
+            <a href="#">
+              <div class="top">
+                <img src="./images/flaticon.svg" alt="Flaticon" />
+                <span>18 Jun 2019</span>
+              </div>
+              <div class="container">
+                <span>Silver Award</span>
+                <h2>Flaticon design Award 2020-21</h2>
+                <img src="./images/cross-line.svg" alt="Cross Line" />
+              </div>
+              <div class="bottom">
+                <h6>France</h6>
+                <img src="./images/arrow.svg" alt="Arrow" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- awards-end -->
+
+    <section id="email">
+      <div class="wrapper">
+        <div class="bg-box">
+          <div class="text-box">
+            <h1 class="wow fadeInLeft" data-wow-duration="2s">Want to get new design news</h1>
+            <p class="wow fadeInLeft" data-wow-duration="2s">
+              Here is an comparison chart of us thipsum tool, but at the end we
+              win!
+            </p>
+            <form action="" class="wow fadeInLeft">
+              <input
+                type="email"
+                name="email"
+                class="email"
+                placeholder="Your email address"
+              />
+              <input type="button" value="Get Started" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- email-section-end -->
+
+    <footer>
+      <div class="wrapper">
+        <div class="logo-content-box">
+          <img src="./images/logo.png" alt="Logo" />
+          <p>
+            <a href="#">
+                Apartment 0031 Broadmoor Ln, Rotonda West Wood, <br />
+            FL 33947
+            </a>
+          </p>
+        </div>
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <hr />
+        <p>
+          Designed by
+          <a href="https://steyp.com" target="_blank">www.steyp.in</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
