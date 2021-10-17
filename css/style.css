@@ -51,9 +51,11 @@ body {
   font-family: "Gordita Regular";
   background: #141414;
 }
+
 .active {
   overflow: hidden;
 }
+
 header .wrapper {
   height: 120px;
   display: flex;
@@ -88,7 +90,7 @@ header .nav a:hover {
   color: #fff;
 }
 
-header .nav .button, header .mobile-nav .button{
+header .nav .button, header .mobile-nav .button {
   color: #d45945;
   padding: 18px 32px;
   background: #141414;
@@ -110,6 +112,7 @@ header .nav .button::before {
   background-image: linear-gradient(to right, #d45945, #a14d9b);
   border-radius: 8px;
 }
+
 .sticky header {
   position: fixed;
   width: 100%;
@@ -121,6 +124,7 @@ header .nav .button::before {
   animation: header .3s forwards;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
+
 @keyframes header {
   0% {
     transform: translateY(-80px);
@@ -131,9 +135,11 @@ header .nav .button::before {
 }
 
 /* mobile-menu */
+
 header .icon {
   display: none;
 }
+
 header .icon span {
   display: block;
   width: 30px;
@@ -142,16 +148,21 @@ header .icon span {
   margin-bottom: 8px;
   transition: .4s ease-in;
 }
+
 header .mobile-nav {
   display: none;
 }
+
 .overlay {
   display: none;
 }
+
 /* header -end */
+
 .sticky main {
   margin-top: 120px;
 }
+
 main {
   height: calc(100vh - 120px);
   display: flex;
@@ -255,9 +266,11 @@ main .lifted {
   background: linear-gradient(#141414, #141414) padding-box, linear-gradient(130deg, #d45945, #a14d9b) border-box;
   border-radius: 10px;
 }
+
 #awards .items li:last-child {
   margin-right: 0;
 }
+
 #awards .items li:hover {
   height: 500px;
   padding: 50px 30px;
@@ -387,9 +400,11 @@ footer .logo-content-box img {
   width: 40%;
   margin-bottom: 14px;
 }
-footer .logo-content-box p{
+
+footer .logo-content-box p {
   width: 60%;
 }
+
 footer .logo-content-box a {
   color: #5b5a5d;
   font-size: 18px;
@@ -459,10 +474,11 @@ footer p a:hover {
   footer .logo-content-box {
     width: 40%;
   }
-  footer .logo-content-box p{
+  footer .logo-content-box p {
     width: 80%;
   }
 }
+
 @media all and (max-width:980px) {
   header .icon {
     display: block;
@@ -497,13 +513,11 @@ footer p a:hover {
     backdrop-filter: blur(15px);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     transition: .4s ease-in;
-    
   }
   .active header .mobile-nav {
     top: 0;
     visibility: visible;
     opacity: 1;
-
   }
   header .mobile-nav li {
     border-bottom: 1px dashed #5b5a5d;
@@ -518,7 +532,7 @@ footer p a:hover {
   header .mobile-nav li:hover a {
     color: #d45945;
   }
-  header .mobile-nav li:last-child{
+  header .mobile-nav li:last-child {
     margin-bottom: 0;
     border: none;
     padding-bottom: 0;
@@ -527,11 +541,10 @@ footer p a:hover {
     background: linear-gradient(to right, #d45945, #a14d9b);
     color: #fff;
   }
-  
   header .mobile-nav .button::before {
     content: "";
     position: absolute;
-    bottom:35px;
+    bottom: 35px;
     transform: translateX(-25%);
     height: 55px;
     width: 140px;
@@ -567,7 +580,7 @@ footer p a:hover {
   main h1 {
     font-size: 50px;
   }
-  main .lifted{
+  main .lifted {
     right: 0;
   }
   main .image-box img {
@@ -584,9 +597,9 @@ footer p a:hover {
     top: 40%;
   }
   #awards {
-    padding:8% 0 0;
+    padding: 8% 0 0;
   }
-  #awards .items{
+  #awards .items {
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
@@ -595,16 +608,16 @@ footer p a:hover {
     width: 40%;
     margin-bottom: 30px;
   }
-  #awards .items li:nth-child(2n){
+  #awards .items li:nth-child(2n) {
     margin-right: 0;
   }
   #email .bg-box p {
     font-size: 22px;
   }
-  #email .bg-box .email{
+  #email .bg-box .email {
     font-size: 16px;
   }
-  #email .bg-box .btn{
+  #email .bg-box .btn {
     font-size: 16px;
   }
   footer .wrapper {
@@ -631,8 +644,9 @@ footer p a:hover {
     margin-bottom: 26px;
   }
 }
-@media all and (max-width:768px){
-main .lifted {
+
+@media all and (max-width:768px) {
+  main .lifted {
     right: -152px;
     top: 48%;
   }
@@ -645,17 +659,18 @@ main .lifted {
   #email {
     padding: 8% 0;
   }
-  #email .bg-box p{
+  #email .bg-box p {
     width: 90%;
   }
-  #email .bg-box .email{
+  #email .bg-box .email {
     width: 50%;
   }
   #email .bg-box .btn {
     width: 25%;
   }
 }
-@media all and (max-width:640px){
+
+@media all and (max-width:640px) {
   main h1 {
     font-size: 45px;
   }
@@ -684,7 +699,16 @@ main .lifted {
     width: 35%;
   }
 }
+
 @media all and (max-width:480px) {
+  .sticky header .wrapper {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  header .logo img {
+    width: 70%;
+  }
   main .text {
     text-align: center;
   }
@@ -707,7 +731,7 @@ main .lifted {
   }
   #email {
     padding: 8% 0 12%;
-}
+  }
   #email .bg-box {
     text-align: center;
     padding: 0 20px;
@@ -724,10 +748,73 @@ main .lifted {
   footer .logo-content-box a {
     font-size: 16px;
   }
+  footer .nav {
+    flex-direction: column;
+  }
+  footer .nav li {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  footer .nav li:last-child {
+    margin-bottom: 0;
+  }
   footer .nav li a {
     font-size: 16px;
   }
   footer p {
     font-size: 16px;
+  }
+}
+@media all and (max-width:360px){
+  main h1 {
+    font-size: 26px;
+  }
+  main .text p {
+    font-size: 16px;
+  }
+  main button {
+    font-size: 14px;
+  }
+  main .lifted img {
+    width: 65%;
+  }
+  main .lifted {
+    left: 30px;
+  }
+  #awards .items li {
+    width: 100%;
+  }
+  #email .bg-box .email {
+    width: 90%;
+  }
+  #email .bg-box .btn {
+    width: 60%;
+    margin: 20px auto;
+  }
+}
+@media all and (max-width:320px) {
+  main .lifted {
+    top: 56%;
+  }
+  #awards .items .container h2 {
+    font-size: 20px;
+  }
+  #awards .items .bottom h6 {
+    font-size: 16px;
+  }
+  #email .bg-box h1 {
+    font-size: 24px;
+  }
+  #email .bg-box p {
+    font-size: 16px;
+  }
+  footer .logo-content-box a{
+    font-size: 14px;
+  }
+  footer .nav li a {
+    font-size: 14px;
+  }
+  footer p {
+    font-size: 14px;
   }
 }
