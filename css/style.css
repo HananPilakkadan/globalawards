@@ -19,14 +19,16 @@ html {
   font-family: "Gordita Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Gordita Regular"), url("../fonts/Gordita Regular.woff") format("woff");
+  src: local("Gordita Regular"),
+    url("../fonts/Gordita Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gordita Medium";
   font-style: normal;
   font-weight: normal;
-  src: local("Gordita Medium"), url("../fonts/Gordita Medium.woff") format("woff");
+  src: local("Gordita Medium"),
+    url("../fonts/Gordita Medium.woff") format("woff");
 }
 
 .wrapper {
@@ -35,7 +37,8 @@ html {
   margin: 0 auto;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -90,27 +93,19 @@ header .nav a:hover {
   color: #fff;
 }
 
-header .nav .button, header .mobile-nav .button {
+header .nav .button,
+header .mobile-nav .button {
   color: #d45945;
   padding: 18px 32px;
   background: #141414;
   border-radius: 8px;
+  border: 1px solid transparent;
+  background: linear-gradient(#141414, #141414) padding-box,
+    linear-gradient(130deg, #d45945, #a14d9b) border-box;
 }
 
 header .nav .button:hover {
   background: linear-gradient(to right, #d45945, #a14d9b);
-}
-
-header .nav .button::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  transform: translateX(-20%);
-  height: 60px;
-  width: 165px;
-  z-index: -1;
-  background-image: linear-gradient(to right, #d45945, #a14d9b);
-  border-radius: 8px;
 }
 
 .sticky header {
@@ -121,7 +116,7 @@ header .nav .button::before {
   left: 0;
   z-index: 55;
   background: #141414;
-  animation: header .3s forwards;
+  animation: header 0.3s forwards;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -146,7 +141,7 @@ header .icon span {
   height: 3px;
   background: linear-gradient(to right, #d45945, #a14d9b);
   margin-bottom: 8px;
-  transition: .4s ease-in;
+  transition: 0.4s ease-in;
 }
 
 header .mobile-nav {
@@ -237,8 +232,8 @@ main .image-box .lefted {
 
 main .lifted {
   position: absolute;
-  right: 8%;
-  top: 12%;
+  right: 14%;
+  top: 25%;
 }
 
 /* main-end */
@@ -263,7 +258,8 @@ main .lifted {
   flex-direction: column;
   justify-content: center;
   transition: 0.3s ease-in;
-  background: linear-gradient(#141414, #141414) padding-box, linear-gradient(130deg, #d45945, #a14d9b) border-box;
+  background: linear-gradient(#141414, #141414) padding-box,
+    linear-gradient(130deg, #d45945, #a14d9b) border-box;
   border-radius: 10px;
 }
 
@@ -333,7 +329,8 @@ main .lifted {
 }
 
 #email .bg-box {
-  background: linear-gradient(85deg, #d458452a, #8b3500c0), url(../images/footer-image.png);
+  background: linear-gradient(85deg, #d458452a, #8b3500c0),
+    url(../images/footer-image.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -377,7 +374,7 @@ main .lifted {
   width: 18%;
   background: linear-gradient(to right, #d45945, #a14d9b);
   margin-left: -30px;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 #email .bg-box .btn:hover {
@@ -411,7 +408,7 @@ footer .logo-content-box a {
   font-weight: 600;
   line-height: 1.6em;
   letter-spacing: 1px;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 footer .logo-content-box a:hover {
@@ -461,12 +458,10 @@ footer p a:hover {
 
 /* responsive-screen */
 
-@media all and (max-width:1280px) {
-  body {
-    overflow-x: hidden;
-  }
+@media all and (max-width: 1280px) {
   main .lifted {
-    right: -10%;
+    right: 0;
+    top: 28%;
   }
   main .lifted img {
     width: 90%;
@@ -479,7 +474,7 @@ footer p a:hover {
   }
 }
 
-@media all and (max-width:980px) {
+@media all and (max-width: 980px) {
   header .icon {
     display: block;
     z-index: 55;
@@ -512,7 +507,7 @@ footer p a:hover {
     z-index: 44;
     backdrop-filter: blur(15px);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    transition: .4s ease-in;
+    transition: 0.4s ease-in;
   }
   .active header .mobile-nav {
     top: 0;
@@ -562,7 +557,7 @@ footer p a:hover {
     background: rgba(0, 0, 0, 0.527);
     z-index: 33;
     backdrop-filter: blur(8px);
-    transition: .4s ease-in;
+    transition: 0.4s ease-in;
   }
   .active .overlay {
     visibility: visible;
@@ -645,16 +640,21 @@ footer p a:hover {
   }
 }
 
-@media all and (max-width:768px) {
+@media all and (max-width: 768px) {
+  main {
+    padding-bottom: 8%;
+  }
   main .lifted {
-    right: -152px;
-    top: 48%;
+    right: 15%;
+    top: 55%;
+    width: 65%;
   }
   main .image-box {
     height: 300px;
   }
   main .lifted img {
-    width: 70%;
+    width: 100%;
+    display: block;
   }
   #email {
     padding: 8% 0;
@@ -670,7 +670,7 @@ footer p a:hover {
   }
 }
 
-@media all and (max-width:640px) {
+@media all and (max-width: 640px) {
   main h1 {
     font-size: 45px;
   }
@@ -678,8 +678,7 @@ footer p a:hover {
     width: 100%;
   }
   main .lifted {
-    right: -218px;
-    top: 45%;
+    top: 60%;
   }
   #awards .items li {
     width: 60%;
@@ -700,7 +699,7 @@ footer p a:hover {
   }
 }
 
-@media all and (max-width:480px) {
+@media all and (max-width: 480px) {
   .sticky header .wrapper {
     display: flex;
     align-items: center;
@@ -718,10 +717,6 @@ footer p a:hover {
   }
   main .text p {
     font-size: 18px;
-  }
-  main .lifted {
-    left: 50px;
-    top: 50%;
   }
   main button {
     font-size: 16px;
@@ -765,7 +760,10 @@ footer p a:hover {
     font-size: 16px;
   }
 }
-@media all and (max-width:360px){
+@media all and (max-width: 360px) {
+  main {
+    padding-bottom: 5%;
+  }
   main h1 {
     font-size: 26px;
   }
@@ -775,11 +773,10 @@ footer p a:hover {
   main button {
     font-size: 14px;
   }
-  main .lifted img {
-    width: 65%;
-  }
   main .lifted {
-    left: 30px;
+    left: 34px;
+    top: 63%;
+    width: 80%;
   }
   #awards .items li {
     width: 100%;
@@ -792,9 +789,10 @@ footer p a:hover {
     margin: 20px auto;
   }
 }
-@media all and (max-width:320px) {
+@media all and (max-width: 320px) {
   main .lifted {
-    top: 56%;
+    left: 34px;
+    top: 65%;
   }
   #awards .items .container h2 {
     font-size: 20px;
@@ -808,7 +806,7 @@ footer p a:hover {
   #email .bg-box p {
     font-size: 16px;
   }
-  footer .logo-content-box a{
+  footer .logo-content-box a {
     font-size: 14px;
   }
   footer .nav li a {
